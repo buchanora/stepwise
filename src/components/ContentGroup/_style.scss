@@ -1,0 +1,21 @@
+/******************** Wizard Body
+***********************************/
+.wizard-body{
+  position: relative;
+  padding: 0;
+  flex: 1;
+}
+.wizard-step-enter{
+  opacity: 0.01;
+}
+.wizard-step-enter.wizard-step-enter-active{
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.wizard-step-leave{
+  opacity: 1;
+}
+.wizard-step-leave.wizard-step-leave-active{
+  opacity: 0.01;
+  transition: opacity 300ms ease-out;
+}

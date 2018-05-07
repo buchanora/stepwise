@@ -1,0 +1,78 @@
+/******************** Wizard Steps
+***********************************/
+.wizard-step{
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+// .wizard-step--last{
+  // width:inherit;
+// }
+.wizard-step--first{
+  flex: 0;
+}
+.wizard-step-divider{
+  border: 0;
+  border-bottom: 1px solid $color-gray-4;
+  flex: 1;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+.wizard-step-countWrapper{
+
+  box-sizing: border-box;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size:  $font-size-down-2;
+  border: 1px solid $color-gray-4;
+  text-align: center;
+  color: $color-gray-0;
+}
+.wizard-step-count{
+  position: relative;
+  font-weight: $global-weight-bold;
+  // top: 10px;
+}
+.wizard-step-label{
+  white-space: nowrap;
+  margin-left: 7.5px;
+  margin-left: 7.5px;
+  text-align: center;
+  line-height: 1.2;
+  color: $color-gray-0;
+  font-weight: $global-weight-bold;
+  font-size: $font-size-down-1;
+}
+.wizard-step--done .wizard-step-countWrapper{
+  border: 1px $color-gray-2;
+  background: $color-gray-2;
+  color: $color-white;
+  font-weight: $global-weight-bold;
+}
+.wizard-step--done .wizard-step-label{
+  color: $color-gray-0;
+  font-weight: $global-weight-bold;
+}
+.wizard-step--active .wizard-step-count{
+  position: relative;
+}
+.wizard-step--active .wizard-step-countWrapper{
+  box-sizing: border-box;
+  font-size: $font-size-default;
+  border: 1px solid $color-secondary-0;
+  background: $color-secondary-0;
+  color: $color-white;
+  font-weight: $global-weight-bold;
+}
+.wizard-step--active .wizard-step-label{
+  color: $color-dark-4;
+  font-weight: $global-weight-bold;
+}
